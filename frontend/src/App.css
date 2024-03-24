@@ -1,0 +1,94 @@
+#root {
+  max-width: 8220px;
+  margin: 7%;
+  padding: 1.6rem;
+  text-align: center;
+  border: solid white;
+  margin-top: 175px;
+  border-radius: 5%;
+  box-shadow: 7px 3px 3px white;
+  background: rgb(255, 169, 48);
+  background: radial-gradient(
+    circle,
+    rgba(255, 169, 48, 1) 0%,
+    rgba(255, 117, 31, 0.9248074229691877) 0%,
+    rgba(255, 163, 41, 0.8883928571428571) 100%
+  );
+}
+
+#input-field {
+  display: flex;
+  gap: 6px;
+}
+input {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  background-color: #f5dddd;
+  border-radius: 9px;
+  height: 46px;
+  width: 100%;
+  color: black;
+}
+
+input::file-selector-button {
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+  font-weight: bold;
+  border-radius: 8px 15px 15px 8px;
+  height: 40px;
+  background-color: #2374f7;
+  transition: border-color 0.25s;
+}
+input::file-selector-button:hover {
+  background: #438bff;
+  cursor: pointer;
+  border-color: #729fe7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+p {
+  margin: auto 0;
+  font-size: 0.9em;
+}
+
+strong {
+  margin-left: 0.3rem;
+  font-size: larger;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+img {
+  width: 450px;
+  height: auto;
+}
+
+#messageText {
+  font-weight: bolder;
+  font-size: large;
+}
+
+@media (max-width: 550px) {
+  #input-field {
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 1rem;
+  }
+  button {
+    width: 100%;
+  }
+  img {
+    width: 300px;
+    height: auto;
+  }
+}
